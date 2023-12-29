@@ -1,0 +1,172 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(gif.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .texto {
+    position: absolute;
+    width: 78%;
+    height: 40%;
+    left: 12%;
+    top: 15%;
+    border: 3px solid rgb(44, 170, 44);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: transparent;
+  }
+  
+  .texto::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: blue;
+    text-shadow: 4px 4px cyan;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+  }
+  
+  .texto:focus,
+  .texto:active {
+    border: 3px solid rgb(44, 170, 44);
+    outline: none;
+  }
+  
+  .encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    border-radius: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: darkseagreen;
+  }
+  
+  
+  
+  .botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 29%;
+    top: 82%;
+  }
+  
+  .btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:darkorchid;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: blue;
+
+    --duration: 7s;
+      --easing: linear;
+      --c-color-1: rgba(255, 163, 26, .7);
+      --c-color-2: #1a23ff;
+      --c-color-3: #e21bda;
+      --c-color-4: rgba(255, 232, 26, .7);
+      --c-shadow: rgba(255, 223, 87, .5);
+      --c-shadow-inset-top: rgba(52, 255, 211, 0.9);
+      --c-shadow-inset-bottom: rgba(255, 250, 215, .8);
+      --c-radial-inner: #ffd215;
+      --c-radial-outer: #f172ff;
+      --c-color: #fff;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      border: none;
+      display: table;
+      border-radius: 24px;
+      font-weight: 600;
+      /*font-size: 16px;*/
+      letter-spacing: 0.02em;
+      /*line-height: 1.5;*/
+      color: var(--c-color);
+      background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
+      box-shadow: 0 0 14px var(--c-shadow);
+
+  }
+  
+  .btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: slateblue;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+
+
+    --duration: 7s;
+      --easing: linear;
+      --c-color-1: rgba(255, 163, 26, .7);
+      --c-color-2: #1a23ff;
+      --c-color-3: #e21bda;
+      --c-color-4: rgba(255, 232, 26, .7);
+      --c-shadow: rgba(255, 223, 87, .5);
+      --c-shadow-inset-top: rgba(52, 255, 211, 0.9);
+      --c-shadow-inset-bottom: rgba(255, 250, 215, .8);
+      --c-radial-inner: #ffd215;
+      --c-radial-outer: #f172ff;
+      --c-color: #fff;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      border: none;
+      display: table;
+      border-radius: 24px;
+      font-weight: 600;
+      /*font-size: 16px;*/
+      letter-spacing: 0.02em;
+      /*line-height: 1.5;*/
+      color: var(--c-color);
+      background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
+      box-shadow: 0 0 14px var(--c-shadow);
+
+  }
+  
+  .btn-desencriptar:hover,
+  .btn-encriptar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+  }
+  
